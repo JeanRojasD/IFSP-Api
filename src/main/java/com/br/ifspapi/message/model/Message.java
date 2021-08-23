@@ -11,6 +11,7 @@ import org.modelmapper.convention.MatchingStrategies;
 
 @Table(name = "Message")
 @Entity
+@AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
 public class Message {
@@ -19,8 +20,10 @@ public class Message {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Getter @Setter private LocalDate dataCadastro;
-    @Getter @Setter private String texto;
+    @Getter @Setter
+    private LocalDate dataCadastro;
+    @Getter @Setter
+    private String texto;
 
     public Message(LocalDate dataCadastro, String texto) {
         this.dataCadastro = dataCadastro;
