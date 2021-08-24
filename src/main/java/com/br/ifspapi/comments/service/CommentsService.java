@@ -39,6 +39,15 @@ public class CommentsService {
         }));
     }
 
+
+    public CommentsDTO findByTextContaining(String text){
+        return CommentsDTO.from(commentsRepository.findByTextContaining(text).orElseThrow(() -> {
+            logger.error("Comments not found {}", text);
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
+        }));
+    }
+
+
     public CommentsDTO Create  (CommentsForm commentsForm){
 
         Comments commentsCreate = Comments.from(commentsForm);

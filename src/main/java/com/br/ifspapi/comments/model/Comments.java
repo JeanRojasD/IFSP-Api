@@ -19,7 +19,7 @@ public class Comments {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private LocalDate date;
+    private LocalDate date = LocalDate.now();
     private String text;
 
     public static Comments from(CommentsForm commentsForm) {

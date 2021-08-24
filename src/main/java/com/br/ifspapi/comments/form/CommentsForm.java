@@ -11,9 +11,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CommentsForm {
-
-    public CommentsDTO update;
-    private LocalDateTime date;
+    
     private String text;
 
 }
