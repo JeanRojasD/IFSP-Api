@@ -8,6 +8,7 @@ import com.br.ifspapi.comments.model.Comments;
 import com.br.ifspapi.comments.repository.CommentsRepository;
 import com.br.ifspapi.comments.service.CommentsService;
 import org.junit.jupiter.api.Test;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -47,6 +48,28 @@ public class CommentsServiceTest {
         assertEquals(comments.getText(), text );
 
     }
+
+    @Test
+    @Rollback(false)
+    public void updateComentario(){
+
+        Comments comments1 = commentsRepository.save(new Comments("text update"));
+
+        CommentsForm commentsForm = new CommentsForm("text mudou");
+
+        Comments comments = commentsRepository.getById(2L);
+
+        var modelMapper = new ModelMapper();
+
+        modelMapper.map(commentsForm, comments);
+
+        commentsRepository.save(comments);
+
+
+        assertEquals(commentsForm.getText(), comments.getText());
+
+    }
+
 
     @Test
     @Rollback(false)

@@ -22,6 +22,10 @@ public class Comments {
     private LocalDate date = LocalDate.now();
     private String text;
 
+    public Comments(String text) {
+        this.text = text;
+    }
+
     public static Comments from(CommentsForm commentsForm) {
         ModelMapper modelMapper = new ModelMapper();
         modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
