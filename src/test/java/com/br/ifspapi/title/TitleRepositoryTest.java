@@ -5,6 +5,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.annotation.Rollback;
 
 import java.util.ArrayList;
@@ -33,9 +34,6 @@ class TitleRepositoryTest {
         List<Title> titleList = titleRepository.findAll();
         List<Title> titleListEmpty = new ArrayList<>();
 
-        for(Title title : titleList){
-            System.out.println(title);
-        }
 
         assertNotSame(titleList, titleListEmpty);
     }
@@ -43,17 +41,18 @@ class TitleRepositoryTest {
     @Test
     @Rollback(false)
     public void verifyTitle_WhenHasUpdated(){
-        Title title = titleRepository.save(new Title("title"));
+        titleRepository.save(new Title("title"));
         TitleForm titleForm = new TitleForm("title updated");
         Long searchId = 1L;
 
         var modelMapper = new ModelMapper();
-        var titleFound = titleRepository.findById(searchId);
+        Title titleFound = titleRepository.getById(searchId);
 
         modelMapper.map(titleForm, titleFound);
-        titleRepository.save(titleFound.get());
+        titleRepository.save(titleFound);
 
-        assertEquals(titleFound.get().getTitle(), titleForm.getTitle());
+
+        assertEquals(titleForm.getTitle(), titleFound.getTitle());
     }
 
     @Test
