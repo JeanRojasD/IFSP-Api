@@ -11,6 +11,10 @@ public class AnexoForm {
     @Getter @Setter
     private String src;
 
+    public AnexoForm(String src) {
+        this.src = src;
+    }
+
     public static AnexoForm from(AnexoModel anexoModel){
         ModelMapper modelMapper = new ModelMapper();
         modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
