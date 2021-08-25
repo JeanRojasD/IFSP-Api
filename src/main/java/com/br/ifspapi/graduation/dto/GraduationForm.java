@@ -15,9 +15,6 @@ public class GraduationForm {
     private String name;
     private String descricao;
 
-    public GraduationForm(){
-
-    }
 
     public GraduationForm(String name, String descricao) {
         this.name = name;
