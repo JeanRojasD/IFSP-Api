@@ -1,12 +1,9 @@
 package com.br.ifspapi.service;
 
 
-import com.br.ifspapi.comments.controller.CommentsController;
-import com.br.ifspapi.comments.dto.CommentsDTO;
 import com.br.ifspapi.comments.form.CommentsForm;
 import com.br.ifspapi.comments.model.Comments;
 import com.br.ifspapi.comments.repository.CommentsRepository;
-import com.br.ifspapi.comments.service.CommentsService;
 import org.junit.jupiter.api.Test;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
