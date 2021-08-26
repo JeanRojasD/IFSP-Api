@@ -1,8 +1,5 @@
 package com.br.ifspapi.graduation;
 
-import com.br.ifspapi.graduation.dto.GraduationForm;
-import com.br.ifspapi.graduation.model.Graduation;
-import com.br.ifspapi.graduation.repository.GraduationRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

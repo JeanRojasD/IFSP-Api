@@ -1,9 +1,5 @@
-package com.br.ifspapi.graduation.service;
+package com.br.ifspapi.graduation;
 
-import com.br.ifspapi.graduation.dto.GraduationDto;
-import com.br.ifspapi.graduation.dto.GraduationForm;
-import com.br.ifspapi.graduation.model.Graduation;
-import com.br.ifspapi.graduation.repository.GraduationRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
