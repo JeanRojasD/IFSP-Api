@@ -1,8 +1,5 @@
-package com.br.ifspapi.comments.controller;
+package com.br.ifspapi.comments;
 
-import com.br.ifspapi.comments.dto.CommentsDTO;
-import com.br.ifspapi.comments.form.CommentsForm;
-import com.br.ifspapi.comments.service.CommentsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -23,9 +20,7 @@ public class CommentsController {
 
     @PostMapping
     public ResponseEntity<CommentsDTO> create (@RequestBody @Validated CommentsForm commentsForm){
-
         return ResponseEntity.ok(commentsService.Create(commentsForm));
-
     }
 
     @GetMapping

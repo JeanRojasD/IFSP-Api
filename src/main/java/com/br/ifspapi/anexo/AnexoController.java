@@ -14,7 +14,7 @@ public class AnexoController {
     private AnexoService anexoService;
 
     @Autowired
-    AnexoController(AnexoService anexoService){this.anexoService = anexoService;}
+    public AnexoController(AnexoService anexoService){this.anexoService = anexoService;}
 
     @GetMapping
     public ResponseEntity<List<AnexoDTO>> findAll(){return ResponseEntity.ok(anexoService.findAll());}

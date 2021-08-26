@@ -1,4 +1,4 @@
-package com.br.ifspapi.comments.form;
+package com.br.ifspapi.comments;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

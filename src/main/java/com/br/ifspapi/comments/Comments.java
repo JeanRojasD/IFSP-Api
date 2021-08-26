@@ -1,5 +1,4 @@
-package com.br.ifspapi.comments.model;
-import com.br.ifspapi.comments.form.CommentsForm;
+package com.br.ifspapi.comments;
 import lombok.*;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;

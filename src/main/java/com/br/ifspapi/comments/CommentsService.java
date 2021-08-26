@@ -1,9 +1,5 @@
-package com.br.ifspapi.comments.service;
+package com.br.ifspapi.comments;
 
-import com.br.ifspapi.comments.dto.CommentsDTO;
-import com.br.ifspapi.comments.form.CommentsForm;
-import com.br.ifspapi.comments.model.Comments;
-import com.br.ifspapi.comments.repository.CommentsRepository;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,9 +17,7 @@ public class CommentsService {
     private final CommentsRepository commentsRepository;
 
     public CommentsService ( CommentsRepository commentsRepository ){
-
         this.commentsRepository = commentsRepository;
-
     }
 
     public Page<CommentsDTO> findAll(Pageable pageable) {

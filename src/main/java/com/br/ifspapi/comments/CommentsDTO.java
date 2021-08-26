@@ -1,6 +1,5 @@
-package com.br.ifspapi.comments.dto;
+package com.br.ifspapi.comments;
 
-import com.br.ifspapi.comments.model.Comments;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

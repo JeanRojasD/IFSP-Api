@@ -1,6 +1,6 @@
-package com.br.ifspapi.comments.repository;
+package com.br.ifspapi.comments;
 
-import com.br.ifspapi.comments.model.Comments;
+import com.br.ifspapi.comments.Comments;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
