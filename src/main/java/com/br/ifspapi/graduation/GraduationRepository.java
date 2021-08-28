@@ -1,6 +1,6 @@
-package com.br.ifspapi.graduation.repository;
+package com.br.ifspapi.graduation;
 
-import com.br.ifspapi.graduation.model.Graduation;
+import com.br.ifspapi.graduation.Graduation;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

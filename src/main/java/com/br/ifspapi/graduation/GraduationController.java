@@ -1,8 +1,5 @@
-package com.br.ifspapi.graduation.controller;
+package com.br.ifspapi.graduation;
 
-import com.br.ifspapi.graduation.dto.GraduationDto;
-import com.br.ifspapi.graduation.dto.GraduationForm;
-import com.br.ifspapi.graduation.service.GraduationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

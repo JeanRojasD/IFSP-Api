@@ -11,9 +11,9 @@ import java.util.List;
 @RequestMapping("/title")
 public class TitleController {
 
-    @Autowired
     private TitleService titleService;
 
+    @Autowired
     public TitleController(TitleService titleService) {
         this.titleService = titleService;
     }
