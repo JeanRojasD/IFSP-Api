@@ -1,5 +1,6 @@
 package com.br.ifspapi.post;
 
+import com.br.ifspapi.comments.Comments;
 import com.br.ifspapi.graduation.Graduation;
 import com.br.ifspapi.user.User;
 import lombok.AllArgsConstructor;
@@ -30,6 +31,8 @@ public class Post {
     private Graduation graduation;
     @ManyToOne
     private User usuario;
+    @ManyToOne
+    private Comments comments;
 
     public static Post from (PostForm postForm) {
         ModelMapper modelMapper = new ModelMapper();
