@@ -33,6 +33,7 @@ public class UserService {
         return UserDTO.from(userRepository.save(User.from(userForm)));
     }
 
+    //todo necessario finalizar o serviço de usuario, ajustando o problema de variaveis nulas
     public UserDTO update(Long id, UserForm userForm){
 
         User userFound = userRepository.findById(id).orElseThrow(() -> {
