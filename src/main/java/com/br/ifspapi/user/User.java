@@ -7,6 +7,8 @@ import com.br.ifspapi.title.Title;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.modelmapper.ModelMapper;
+import org.modelmapper.convention.MatchingStrategies;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -40,5 +42,10 @@ public class User {
     private Title title;
 
 
+    public static User from(UserForm userForm) {
+        ModelMapper modelMapper = new ModelMapper();
+        modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
 
+        return modelMapper.map(userForm, User.class);
+    }
 }
