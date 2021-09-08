@@ -20,6 +20,7 @@ public class Comments {
     private LocalDate date = LocalDate.now();
     private String text;
     @ManyToOne
+    @JoinColumn(name = "user_id")
     private User user;
 
     public Comments(String text) {
