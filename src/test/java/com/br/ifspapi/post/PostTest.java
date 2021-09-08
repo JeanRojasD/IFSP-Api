@@ -1,4 +1,4 @@
-package com.br.ifspapi.test;
+package com.br.ifspapi.post;
 
 import com.br.ifspapi.post.PostForm;
 import com.br.ifspapi.post.Post;
