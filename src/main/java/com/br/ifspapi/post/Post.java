@@ -1,6 +1,5 @@
-package com.br.ifspapi.model;
+package com.br.ifspapi.post;
 
-import com.br.ifspapi.dto.form.PostForm;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -25,10 +24,10 @@ public class Post {
     private Integer gpLike;
     private String postcol;
 
-    @OneToOne(mappedBy = "")
-    private Comentario comentario;
-    @ManyToOne
-    private Community community;
+//    @ManyToOne
+//    private Graduation graduation;
+//    @ManyToOne
+//    private Usuario usuario;
 
     public Post (String title, String teste) {
     }

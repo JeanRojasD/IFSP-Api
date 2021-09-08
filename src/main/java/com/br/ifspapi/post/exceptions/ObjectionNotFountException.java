@@ -1,4 +1,4 @@
-package com.br.ifspapi.service.exceptions;
+package com.br.ifspapi.post.exceptions;
 
 public class ObjectionNotFountException extends RuntimeException {
 

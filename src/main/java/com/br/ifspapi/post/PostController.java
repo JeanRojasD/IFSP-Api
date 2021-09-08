@@ -1,8 +1,5 @@
-package com.br.ifspapi.controller;
+package com.br.ifspapi.post;
 
-import com.br.ifspapi.dto.PostDto;
-import com.br.ifspapi.dto.form.PostForm;
-import com.br.ifspapi.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

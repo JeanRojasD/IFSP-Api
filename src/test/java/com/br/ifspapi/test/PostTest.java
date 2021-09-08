@@ -1,8 +1,8 @@
 package com.br.ifspapi.test;
 
-import com.br.ifspapi.dto.form.PostForm;
-import com.br.ifspapi.model.Post;
-import com.br.ifspapi.repositories.PostRepositories;
+import com.br.ifspapi.post.PostForm;
+import com.br.ifspapi.post.Post;
+import com.br.ifspapi.post.PostRepositories;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

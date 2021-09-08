@@ -1,6 +1,5 @@
-package com.br.ifspapi.repositories;
+package com.br.ifspapi.post;
 
-import com.br.ifspapi.model.Post;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

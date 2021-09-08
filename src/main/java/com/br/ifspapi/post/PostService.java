@@ -1,10 +1,6 @@
-package com.br.ifspapi.service;
+package com.br.ifspapi.post;
 
-import com.br.ifspapi.dto.PostDto;
-import com.br.ifspapi.dto.form.PostForm;
-import com.br.ifspapi.model.Post;
-import com.br.ifspapi.repositories.PostRepositories;
-import com.br.ifspapi.service.exceptions.DataIntegrityViolationException;
+import com.br.ifspapi.post.exceptions.DataIntegrityViolationException;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

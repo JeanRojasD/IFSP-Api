@@ -1,4 +1,4 @@
-package com.br.ifspapi.dto.form;
+package com.br.ifspapi.post;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
