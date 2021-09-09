@@ -1,5 +1,7 @@
 package com.br.ifspapi.comments;
 
+import com.br.ifspapi.user.User;
+import com.br.ifspapi.user.UserDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,6 +22,8 @@ public class CommentsDTO {
     private Long id;
     private LocalDateTime date;
     private String text;
+
+    private UserDTO user;
 
     public static  CommentsDTO from(Comments comments){
         ModelMapper modelMapper = new ModelMapper();
