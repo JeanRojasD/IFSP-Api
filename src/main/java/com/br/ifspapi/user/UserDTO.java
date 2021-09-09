@@ -23,6 +23,7 @@ public class UserDTO {
     private String imgUser;
     private String name;
     private String userName;
+    private String cpf;
     private String email;
     private LocalDate birth;
     private Integer ra;
